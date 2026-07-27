@@ -165,7 +165,7 @@ export default function DashboardPage() {
           alert('Payment confirmed! Upload your WhatsApp export below to get started.');
           await refreshReports();
         } else {
-          alert('Payment could not be verified. Contact support before resending.');
+          alert('Payment could not be verified. Email support@probroker.ai before resending.');
         }
       },
       prefill: { email: user.email },
@@ -280,7 +280,9 @@ export default function DashboardPage() {
                     </button>
                   </div>
                 ) : r.status === 'failed' ? (
-                  <span style={{ color: '#C25450', fontSize: 14 }}>Failed — contact support</span>
+                  <a href="mailto:support@probroker.ai?subject=Failed report" style={{ color: '#C25450', fontSize: 14, textDecoration: 'underline' }}>
+                    Failed — email support@probroker.ai
+                  </a>
                 ) : (
                   <span style={{ color: 'rgba(245,241,231,0.4)', fontSize: 14 }}>Processing...</span>
                 )}
