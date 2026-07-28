@@ -482,7 +482,7 @@ const html = `<!DOCTYPE html>
       <div class="step reveal">
         <div class="step-num">03 — RECEIVE</div>
         <h3>Get your report</h3>
-        <p>One Excel file, delivered the same day — organized listings, plus every match our AI found for you.</p>
+        <p>One Excel file, delivered within 24 hours — organized listings, plus every match found for you.</p>
       </div>
     </div>
   </div>
@@ -590,7 +590,7 @@ const html = `<!DOCTYPE html>
         <div class="offer-badge">Simple, pay-per-report pricing</div>
         <h2>Choose how far back you need.</h2>
         <p>No subscription, no lock-in — pay once for the listing window you need,
-          get your full report back the same day.</p>
+          get your full report back within 24 hours.</p>
       </div>
       <div class="offer-panel">
         <ul>
@@ -606,9 +606,15 @@ const html = `<!DOCTYPE html>
 </section>
 
 <footer>
-  <div class="wrap">
+  <div class="wrap" style="flex-direction:column;align-items:flex-start;gap:14px;">
     <span>ProBroker.ai — AI-powered listing intelligence for real estate brokers.</span>
-    <span><a href="/signup">Get started</a></span>
+    <div style="display:flex;gap:18px;flex-wrap:wrap;font-size:13px;">
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms &amp; Conditions</a>
+      <a href="/refund-policy">Refund &amp; Cancellation</a>
+      <a href="/contact">Contact Us</a>
+      <a href="/signup">Get started</a>
+    </div>
   </div>
 </footer>
 
