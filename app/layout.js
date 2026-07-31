@@ -1,3 +1,5 @@
+import { Analytics } from '@vercel/analytics/next';
+
 export const metadata = {
   title: 'ProBroker.ai — App',
   description: 'Sign in to view your reports',
@@ -14,6 +16,7 @@ export default function RootLayout({ children }) {
         minHeight: '100vh',
       }}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
